@@ -1,0 +1,19 @@
+.main-header {
+  // display: table;
+  // width: 100%;
+  box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.09);
+  // background: #fef234;
+  // position: relative;
+
+  &__container {
+    position: relative;
+  }
+}
+
+.main-header__wrapper {
+  background-color: $header-background-color;
+}
+
+.main-header__searchbar {
+  background-color: $searchbar-background-color;
+}

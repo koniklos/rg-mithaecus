@@ -1,0 +1,90 @@
+/**********************************************/
+/*                   Header                   */
+/**********************************************/
+$header-lg-background-color: transparent;
+$header-sm-background-color: $black;
+
+/**********************************************/
+/*                    Logo                    */
+/**********************************************/
+$header-lg-logo-color: $black;
+$header-lg-logo-color-hover: $black-dim;
+
+$header-sm-logo-color: $white;
+$header-sm-logo-color-hover: $white-pure;
+
+/**********************************************/
+/*              Top level links               */
+/**********************************************/
+$header-lg-menulink-top-lvl-color: $black;
+$header-lg-menulink-top-lvl-color-hover: $black-dim;
+
+$header-sm-menulink-top-lvl-color: $white;
+$header-sm-menulink-top-lvl-color-hover: $white-pure;
+
+$header-lg-menulink-top-lvl-background-color: $white-pure;
+$header-lg-menulink-top-lvl-background-color-hover: $white-pure;
+
+$header-sm-menulink-top-lvl-background-color: transparent;
+$header-sm-menulink-top-lvl-background-color-hover: transparent;
+
+/**********************************************/
+/*               Submenu links                */
+/**********************************************/
+$header-lg-menulink-submenu-color: $black;
+$header-lg-menulink-submenu-color-hover: #e07;
+
+$header-sm-menulink-submenu-color: $white;
+$header-sm-menulink-submenu-color-hover: $white-pure;
+
+$header-lg-menulink-submenu-background-color: $white-pure;
+$header-lg-menulink-submenu-background-color-hover: $white-pure;
+
+$header-sm-menulink-submenu-background-color: transparent;
+$header-sm-menulink-submenu-background-color-hover: transparent;
+
+$header-sm-menulink-submenu-depth-1-color: $white;
+$header-sm-menulink-submenu-depth-1-color-hover: $white-pure;
+
+$header-sm-menulink-submenu-depth-1-background-color: transparent;
+$header-sm-menulink-submenu-depth-1-background-color-hover: transparent;
+
+$header-sm-menulink-submenu-depth-2-color: $white;
+$header-sm-menulink-submenu-depth-2-color-hover: $white-pure;
+
+$header-sm-menulink-submenu-depth-2-background-color: transparent;
+$header-sm-menulink-submenu-depth-2-background-color-hover: transparent;
+
+/**********************************************/
+/*             Top level Buttons              */
+/**********************************************/
+$header-lg-menubutton-top-lvl-color: $black;
+$header-lg-menubutton-top-lvl-background-color: transparent;
+$header-lg-menubutton-top-lvl-outline: transparent;
+
+$header-sm-menubutton-top-lvl-color: $black;
+$header-sm-menubutton-top-lvl-background-color: $white-pure;
+$header-sm-menubutton-top-lvl-outline: transparent;
+
+/**********************************************/
+/*              Submenu Buttons               */
+/**********************************************/
+$header-lg-menubutton-submenu-color: $black;
+$header-lg-menubutton-submenu-background-color: transparent;
+$header-lg-menubutton-submenu-outline: transparent;
+
+$header-sm-menubutton-submenu-color: $black;
+$header-sm-menubutton-submenu-background-color: $white-pure;
+$header-sm-menubutton-submenu-outline: transparent;
+
+$header-sm-menubutton-submenu-depth-1-color: $black;
+$header-sm-menubutton-submenu-depth-1-background-color: $white-pure;
+$header-sm-menubutton-submenu-depth-1-outline: transparent;
+
+$header-sm-menubutton-submenu-depth-2-color: $black;
+$header-sm-menubutton-submenu-depth-2-background-color: $white-pure;
+$header-sm-menubutton-submenu-depth-2-outline: transparent;
+
+$header-sm-menubutton-submenu-depth-3-color: $black;
+$header-sm-menubutton-submenu-depth-3-background-color: $white-pure;
+$header-sm-menubutton-submenu-depth-3-outline: transparent;

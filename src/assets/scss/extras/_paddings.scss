@@ -1,0 +1,55 @@
+@mixin sgl-paddings(
+  $padding-top-bottom-step,
+  $padding-left-right-step,
+  $unit: $sgl-base-unit,
+  $base-value: $sgl-root-font-size
+) {
+  $line-height: round($base-value * $sgl-base-line-height);
+  $padding-top-bottom: $line-height * $padding-top-bottom-step;
+  $padding-left-right: $line-height * $padding-left-right-step;
+
+  @if $unit == "px" or $unit == "pxrem" {
+    padding-top: $padding-top-bottom * 1px;
+    padding-bottom: $padding-top-bottom * 1px;
+    padding-left: $padding-left-right * 1px;
+    padding-right: $padding-left-right * 1px;
+  }
+
+  @if $unit == "rem" or $unit == "pxrem" {
+    padding-top: sgl-decimal-ceil(
+      sgl-rem-calc($padding-top-bottom, $base-value),
+      5
+    );
+    padding-bottom: sgl-decimal-ceil(
+      sgl-rem-calc($padding-top-bottom, $base-value),
+      5
+    );
+    padding-left: sgl-decimal-ceil(
+      sgl-rem-calc($padding-left-right, $base-value),
+      5
+    );
+    padding-right: sgl-decimal-ceil(
+      sgl-rem-calc($padding-left-right, $base-value),
+      5
+    );
+  }
+
+  @if $unit == "em" {
+    padding-top: sgl-decimal-ceil(
+      sgl-em-calc($padding-top-bottom, $base-value),
+      5
+    );
+    padding-bottom: sgl-decimal-ceil(
+      sgl-em-calc($padding-top-bottom, $base-value),
+      5
+    );
+    padding-left: sgl-decimal-ceil(
+      sgl-em-calc($padding-left-right, $base-value),
+      5
+    );
+    padding-right: sgl-decimal-ceil(
+      sgl-em-calc($padding-left-right, $base-value),
+      5
+    );
+  }
+}

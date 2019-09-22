@@ -1,0 +1,113 @@
+$primary-color: #4797ff;
+$primary-color-dim: #448eee;
+$primary-color-pale: #dcebff;
+
+$secondary-color: #ff9811;
+
+$alert-color: #ff0033;
+$warning-color: #ffbd00;
+$success-color: #3fa909;
+
+$white: #fafafa;
+$white-pure: #fff;
+$white-dim: #eee;
+$white-dim-more: #e0e0e0;
+
+$egg: #faf8f6;
+$egg-dim: #f6f3f0;
+$egg-dim-1: #efeeed;
+$egg-dim-2: #e6e5e4;
+
+$black: #222;
+$black-light: #333;
+$black-light-1: #444;
+$black-light-2: #555;
+$black-light-3: #666;
+$black-light-4: #777;
+$black-dim: #111;
+$black-pure: #000;
+
+$grey: #e6e6e6;
+$grey-light: #ececec;
+$grey-medium: #949494;
+$grey-dark: #333333;
+
+$red: #f1252f;
+$red-light: #ff2b35;
+$red-dim: #da1c26;
+$red-pale: #eb3f47;
+$red-dark: #a92d2d;
+
+$pinkish-red: #e71c41;
+$pinkish-red-light: #e71c41;
+$pinkish-red-dim: #d21437;
+$pinkish-red-pale: #e54a66;
+
+$yellow: #fef234;
+$yellow-dim: #f6ea2d;
+$yellow-dim-1: #ede22b;
+$yellow-dim-2: #e4d933;
+
+$baby-blue-pale: #e7eef0;
+$baby-blue-pale-dim: #e0e8ea;
+
+$chocolate-dark: #271d1f;
+$retro-petrol: #00a9a5;
+$desert: #ead2ac;
+
+$green: #8ba753;
+$retro-red: #fc5454;
+$retro-red-dim: #ec5a60;
+
+$primary-color: $black;
+$primary-color-dim: $black-dim;
+$primary-color-pale: $grey;
+
+$primary-background-color: $egg;
+$primary-background-color-dim: $egg-dim-1;
+
+$header-bcolor: $black;
+$header-color-contrast: $white-pure;
+$header-color-accent: $pinkish-red-pale;
+
+$header-background-color: $white-pure;
+$header-logo-color: #7c9745;
+$header-searchbar-toggle-color: $black;
+$header-navbar-toggle-color: $black;
+
+$searchbar-background-color: $white-pure;
+$searchbar-btn-color: $black;
+$searchbar-placeholder-color: #b8b8b8;
+
+$menu-links-color: $black;
+
+$menu-links-top-color: $black;
+$menu-links-top-hover-color: $black;
+$menu-links-top-hover-background-color: $white-pure;
+
+$menu-links-sub-color: $black;
+$menu-links-sub-hover-color: adjust-color($green, $lightness: -10%);
+
+$menu-links--small-hover-color: $black;
+$menu-links--small-hover-background-color: $white-pure;
+
+$menu-links--mega-top-color: $black-pure;
+
+$menu-items--small-border-color: #efefef;
+$menu-items--large-border-color: #efefef;
+
+$menu-buttons--small-color: $white-pure;
+$menu-buttons--small-background-color: $green;
+$menu-buttons--small--hover-color: $white-pure;
+$menu-buttons--small--hover-background-color: scale-color(
+  $green,
+  $lightness: -10%
+);
+$menu-buttons--small--focus-color: $white-pure;
+
+$menu-buttons--large-color: $black;
+
+$sub-menu--small-background-color: #fafafa;
+$sub-menu-depth-1--small-background-color: #f4f4f4;
+
+$sub-menu--large-background-color: $white-pure;

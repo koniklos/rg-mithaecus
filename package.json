@@ -1,0 +1,59 @@
+{
+  "name": "mithaecus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build --prod",
+    "bundle": "gulp bundle --prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koniklos/wptheme01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koniklos/wptheme01/issues"
+  },
+  "homepage": "https://github.com/koniklos/wptheme01#readme",
+  "devDependencies": {
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "baseline-element": "^1.0.2",
+    "bootstrap": "^4.3.1",
+    "bootstrap-4-grid": "^3.1.0",
+    "browser-sync": "^2.26.7",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-wp-pot": "^2.3.5",
+    "gulp-zip": "^5.0.0",
+    "jeet": "^7.2.0",
+    "modernizr": "^3.7.1",
+    "susy": "^2.2.14",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^5.2.1",
+    "yards": "^0.1.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.1",
+    "lazyload": "^2.0.0-rc.2",
+    "sassy-gridlover": "^6.0.5",
+    "scroll-out": "^2.2.7",
+    "vanilla-lazyload": "^12.0.0"
+  }
+}

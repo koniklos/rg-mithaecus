@@ -1,0 +1,54 @@
+.navbar__main.navbar__main--large .mega .sub-menu .menu-button {
+  display: none;
+}
+
+.navbar__main.navbar__main--large .menu .menu-item.mega {
+  position: unset;
+}
+
+.navbar__main.navbar__main--large .menu .menu-item.mega.open > .sub-menu {
+  display: flex;
+  // box-shadow: 0px 10px 8px -5px rgba(35, 35, 35, 0.12);
+}
+
+.navbar__main.navbar__main--large .menu-item.mega .sub-menu .sub-menu {
+  display: block;
+  position: unset;
+  border: 0;
+}
+
+.navbar__main.navbar__main--large .menu > .menu-item.mega > .sub-menu {
+  border: 1px solid #efefef;
+  // border-top-color: #fff;
+  flex-wrap: wrap;
+  left: 0;
+  width: 100%;
+}
+
+.navbar__main.navbar__main--large
+  .menu
+  > .menu-item.mega
+  > .sub-menu
+  > .menu-item
+  > .sub-menu {
+  margin: 0;
+}
+
+.navbar__main .menu > .menu-item.mega {
+  margin: 0;
+}
+
+.menu-item.mega .menu-item.open > .sub-menu {
+  box-shadow: none;
+}
+
+.navbar__main.navbar__main--large .menu > .menu-item.mega {
+  @for $i from 1 through 6 {
+    &.cols-#{$i} {
+      > .sub-menu > .menu-item {
+        padding: rem-calc(20px);
+        width: #{1 / $i * 100 + "%"};
+      }
+    }
+  }
+}

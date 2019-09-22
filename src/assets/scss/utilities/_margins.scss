@@ -1,0 +1,64 @@
+$i: 5;
+$max: 40;
+@while $i <= $max {
+  .mt-#{$i} {
+    margin-top: $i + px;
+    // margin-top: rem-calc($i);
+  }
+  .mb-#{$i} {
+    margin-bottom: $i + px;
+    // margin-bottom: rem-calc($i);
+  }
+  .ml-#{$i} {
+    margin-left: $i + px;
+    // margin-left: rem-calc($i);
+  }
+  .mr-#{$i} {
+    margin-right: $i + px;
+    // margin-right: rem-calc($i);
+  }
+  $i: $i + 5;
+}
+
+$i: 0;
+$max: 4;
+@while $i <= $max {
+  .mt-#{$i} {
+    @include sgl-margins($i, 0);
+  }
+
+  .mb-#{$i} {
+    @include sgl-margins(0, $i);
+  }
+
+  .mtb-#{$i} {
+    @include sgl-margins($i, $i);
+  }
+
+  $i: $i + 1;
+}
+
+// @each $size, $width in $breakpoints {
+//   @include breakpoint($size) {
+//     $i: 5;
+//     @while $i <= $max {
+//       .mt-#{$i}\@#{$size} {
+//         margin-top: $i + px;
+//         margin-top: rem-calc($i);
+//       }
+//       .mb-#{$i}\@#{$size} {
+//         margin-bottom: $i + px;
+//         margin-bottom: rem-calc($i);
+//       }
+//       .ml-#{$i}\@#{$size} {
+//         margin-left: $i + px;
+//         margin-left: rem-calc($i);
+//       }
+//       .mr-#{$i}\@#{$size} {
+//         margin-right: $i + px;
+//         margin-right: rem-calc($i);
+//       }
+//       $i: $i + 5;
+//     }
+//   }
+// }

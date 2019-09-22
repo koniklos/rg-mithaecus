@@ -1,0 +1,161 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $display-font-family;
+  font-style: $header-font-style;
+  font-weight: $header-font-weight;
+  // color: $header-color;
+  // line-height: $header-lineheight;
+  // margin-bottom: $header-margin-bottom;
+  text-rendering: optimizeLegibility;
+  word-break: break-word;
+
+  small {
+    line-height: 0;
+    color: $header-small-font-color;
+  }
+}
+
+h1 {
+  @include sgl-heading(
+    3,
+    3,
+    0,
+    2,
+    $unit: $sgl-base-unit,
+    $base-value: $sgl-base-font-size
+  );
+}
+
+h2 {
+  @include sgl-heading(
+    2,
+    2,
+    0,
+    1,
+    $unit: $sgl-base-unit,
+    $base-value: $sgl-base-font-size
+  );
+}
+
+h3 {
+  @include sgl-heading(
+    1,
+    0,
+    0,
+    1,
+    $unit: $sgl-base-unit,
+    $base-value: $sgl-base-font-size
+  );
+}
+
+h4,
+h5 {
+  @include sgl-heading(
+    0,
+    0,
+    0,
+    1,
+    $unit: $sgl-base-unit,
+    $base-value: $sgl-base-font-size
+  );
+}
+
+p,
+ul,
+ol,
+table,
+blockquote,
+pre,
+img {
+  @include sgl-margins(
+    0,
+    1,
+    $unit: $sgl-base-unit,
+    $base-value: $sgl-base-font-size
+  );
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  @include sgl-margins(
+    0,
+    0,
+    $unit: $sgl-base-unit,
+    $base-value: $sgl-base-font-size
+  );
+}
+
+a {
+  color: #5b7429;
+}
+
+/***********************************/
+/* Text alignment */
+/***********************************/
+.text--left {
+  text-align: left;
+}
+.text--center {
+  text-align: center;
+}
+.text--right {
+  text-align: right;
+}
+
+/***********************************/
+/* Text transformation */
+/***********************************/
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+/***********************************/
+/* Text typeface */
+/***********************************/
+.text--serif {
+  font-family: $serif;
+}
+
+.text--sans-serif {
+  font-family: $sans-serif;
+}
+/***********************************/
+/* Text decoration */
+/***********************************/
+.text--underlined {
+  text-decoration: underline;
+}
+.text--underlined-toggle {
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.text--undecorated {
+  text-decoration: none;
+}
+.text--undecorated-toggle {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+/***********************************/
+/* Text weight & style */
+/***********************************/
+.text--bold {
+  font-weight: bold;
+}
+.text--italic {
+  font-style: italic;
+}
+.text--normal {
+  font-weight: normal;
+  font-style: normal;
+}

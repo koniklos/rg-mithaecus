@@ -1,0 +1,31 @@
+.navbar__main {
+  .menu {
+    margin-bottom: 0;
+    text-align: center;
+    position: relative;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+      position: unset;
+    }
+  }
+
+  &.navbar__main--small.navbar__main--not-active {
+    .menu {
+      visibility: hidden;
+      max-height: 0;
+      opacity: 0;
+      transition: all 0s;
+    }
+  }
+
+  &.navbar__main--small.navbar__main--active {
+    .menu {
+      visibility: visible;
+      height: auto;
+      max-height: 1280px;
+      opacity: 1;
+      transition: max-height 1s ease, opacity 0.25s 0.2s ease;
+    }
+  }
+}

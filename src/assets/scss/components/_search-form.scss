@@ -1,0 +1,25 @@
+.search-form {
+  position: relative;
+  padding-right: 44px;
+  &__label {
+    margin-bottom: 0;
+  }
+  &__button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+  }
+  &__icon {
+    fill: $white_pure;
+  }
+
+  .btn__content {
+    height: 40px;
+    width: 44px;
+    line-height: 40px;
+    display: block;
+    // padding: 10px 13px;
+    // max-height: 40px;
+  }
+}

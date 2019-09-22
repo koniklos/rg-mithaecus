@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+  // font-size: $base-font-size;
+  @include sgl-html($font-size: $sgl-base-font-size);
+
+  @media screen and (min-width: map-get($breakpoints, "large" )) {
+    @include sgl-html($font-size: 18);
+  }
+}
+
+body {
+  background-color: $body-background;
+  // background-color: transparent; // For debugging
+  // background: $body-background url("../images/pattern.png") 0 0 repeat; // For debugging
+  color: $body-color;
+  font-family: $body-font-family;
+  font-weight: $global-weight-normal;
+  // line-height: $global-lineheight;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  @include sgl-body;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+
+img.lazy {
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+img {
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+a:focus,
+input:focus {
+  outline: 2px solid $primary-color;
+  z-index: 999;
+}
+
+::selection {
+  background: $primary-color;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: $primary-color;
+  color: #ffffff;
+}
+
+.btn:focus > .btn__content {
+  outline: 2px solid $primary-color; /* keyboard-only focus styles */
+}
+.btn:focus,
+.btn__content:focus {
+  outline: none;
+}

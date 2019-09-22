@@ -1,0 +1,38 @@
+$body-background: $primary-background-color !default;
+$body-color: #343434 !default;
+
+$serif: Georgia, Times, "Times New Roman", serif !default;
+// $sans-serif: Verdana, "Helvetica Neue", Helvetica, Geneva, Arial, sans-serif !default;
+$sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
+  Ubuntu, Cantarell, "Helvetica Neue", sans-serif !default;
+
+$body-font-family: $sans-serif;
+$display-font-family: $sans-serif;
+
+$global-weight-normal: 400 !default;
+
+$global-width: 1200 !default;
+
+$base-font-size: 100% !default;
+
+// $sgl-extras: 18px;
+// $sgl-debug-mode: true;
+$sgl-base-font-size: 16;
+$sgl-debug-mode-max-width: 1920;
+$sgl-base-unit: "pxrem" !default;
+$sgl-base-line-height: 1.5 !default;
+
+// Container width
+// $container-width: 1200px;
+// Container padding in px
+// $container-padding: 40px;
+
+// Gutter width in percent
+// $gutter-width: 2.5;
+
+$navbar-toggle-padding: 10px !default;
+$navbar-toggle-bar-color-idle: $black !default;
+$navbar-toggle-bar-color-active: $black !default;
+$navbar-toggle-bar-border-radius: 4px !default;
+$navbar-toggle-bar-width: 30px !default;
+$navbar-toggle-bar-height: 4px !default;

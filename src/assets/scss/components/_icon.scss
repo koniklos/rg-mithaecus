@@ -1,0 +1,30 @@
+.icon {
+  &--xsmall {
+    width: 18px;
+    height: 18px;
+  }
+  &--small {
+    width: 25px;
+    height: 25px;
+  }
+  &--medium {
+    width: 50px;
+    height: 50px;
+  }
+
+  &--large {
+    width: 75px;
+    height: 75px;
+  }
+  &--dark,
+  &--black {
+    fill: $black;
+  }
+  &--light,
+  &--white {
+    fill: $white-pure;
+  }
+  &--green {
+    fill: $green;
+  }
+}

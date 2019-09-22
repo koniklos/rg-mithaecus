@@ -1,0 +1,126 @@
+.navbar__toggle {
+  // padding: 0 15px;
+  display: inline-block;
+  // cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  // font: inherit;
+  // color: inherit;
+  // text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  opacity: 1;
+  padding: 0;
+
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: transparent;
+  }
+
+  .btn__content {
+    padding: $navbar-toggle-padding;
+    display: block;
+  }
+}
+
+.navbar__toggle-box {
+  width: $navbar-toggle-bar-width;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.navbar__toggle-box__inner,
+.navbar__toggle-box__inner::before,
+.navbar__toggle-box__inner::after {
+  width: $navbar-toggle-bar-width;
+  height: $navbar-toggle-bar-height;
+  background-color: $navbar-toggle-bar-color-idle;
+  border-radius: $navbar-toggle-bar-border-radius;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.navbar__toggle-box__inner {
+  display: block;
+  margin-top: -2px;
+  top: 2px;
+  transition-duration: 0.275s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.navbar__toggle-box__inner::before,
+.navbar__toggle-box__inner::after {
+  content: "";
+  display: block;
+}
+
+.navbar__toggle-box__inner::before {
+  top: 10px;
+  transition: opacity 0.125s 0.275s ease;
+}
+
+.navbar__toggle-box__inner::after {
+  top: 20px;
+  transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.navbar__toggle.is-active .navbar__toggle-box__inner {
+  transform: translate3d(0, 10px, 0) rotate(135deg);
+  transition-delay: 0.075s;
+}
+
+.navbar__toggle.is-active .navbar__toggle-box__inner,
+.navbar__toggle.is-active .navbar__toggle-box__inner::before,
+.navbar__toggle.is-active .navbar__toggle-box__inner::after {
+  background-color: $navbar-toggle-bar-color-active;
+}
+
+.navbar__toggle.is-active .navbar__toggle-box__inner::before {
+  transition-delay: 0s;
+  opacity: 0;
+}
+
+.navbar__toggle.is-active .navbar__toggle-box__inner::after {
+  transform: translate3d(0, -20px, 0) rotate(-270deg);
+  transition-delay: 0.075s;
+}
+
+.searchbar__toggle {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  background: transparent;
+  padding: 0;
+
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: transparent;
+  }
+
+  &__icon {
+    box-sizing: content-box;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar__toggle {
+    display: none;
+  }
+
+  .searchbar__toggle {
+    left: unset;
+    right: 0;
+  }
+}

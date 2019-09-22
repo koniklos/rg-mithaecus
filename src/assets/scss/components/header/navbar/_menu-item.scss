@@ -1,0 +1,23 @@
+.navbar__main {
+  &.navbar__main--small {
+    .menu-item {
+      border-bottom: 1px solid $menu-items--small-border-color;
+
+      &.open {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.navbar__main {
+  &.navbar__main--large {
+    .menu-item {
+      position: relative;
+    }
+
+    .menu-item__top-level {
+      display: inline-block;
+    }
+  }
+}

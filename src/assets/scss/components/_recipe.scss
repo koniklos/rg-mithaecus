@@ -1,0 +1,89 @@
+.recipe-info {
+  background: $white-pure;
+  text-align: center;
+  @include sgl-paddings(1, 1);
+  @include sgl-margins(2, 2);
+  border: 1px solid #efefef;
+  border-radius: 10px;
+
+  &__box {
+    border-left: 1px solid #efefef;
+
+    &:first-child {
+      border-left: none;
+    }
+  }
+
+  &__icon {
+    fill: $green;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+  }
+
+  &__desc {
+    font-size: 0.8rem;
+  }
+}
+
+.recipe__list {
+  list-style: none;
+  padding: 0;
+}
+
+.recipe__list__instructions {
+  margin-left: 1.5rem;
+}
+
+.recipe__instruction,
+.recipe__ingredient {
+  @include sgl-margins(0, 1);
+}
+
+.recipe__instruction {
+  margin: 0 0 1rem 0;
+  counter-increment: cumstom-counter;
+  position: relative;
+  padding-left: 10px;
+
+  &:before {
+    content: counter(cumstom-counter);
+    color: $white-pure;
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    left: calc(-1 * 32px - 0px);
+    line-height: 32px;
+    width: 32px;
+    height: 32px;
+    top: 0px;
+    background: $green;
+    border-radius: 50%;
+    text-align: center;
+  }
+}
+
+.recipe__tags ul {
+  list-style: none;
+  margin: 1rem 0 0 0;
+  display: inline-block;
+  padding-left: 1rem;
+
+  li {
+    display: inline-block;
+
+    a {
+      background-color: #ececec;
+      margin-right: 10px;
+      padding: 0.3125rem 0.625rem;
+      display: inline-block;
+      font-size: 0.875rem;
+      color: #333333;
+    }
+  }
+}
+
+.icon__tags {
+  transform: translateY(5px);
+}

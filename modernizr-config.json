@@ -1,0 +1,32 @@
+{
+  "classPrefix": "mod_",
+  "enableClasses": true,
+  "enableJSClass": true,
+  "scriptGlobalName": "window",
+  "usePrefixes": true,
+  "minify": true,
+  "options": [
+    "html5shiv",
+    "html5printshiv",
+    "mq",
+    "prefixed",
+    "prefixes",
+    "prefixedCSS",
+    "setClasses"
+  ],
+  "feature-detects": [
+    "css/filters",
+    "css/flexbox",
+    "css/flexwrap",
+    "css/fontface",
+    "css/remunit",
+    "css/transforms",
+    "css/transitions",
+    "css/vhunit",
+    "css/vmaxunit",
+    "css/vminunit",
+    "css/vwunit",
+    "svg",
+    "workers/webworkers"
+  ]
+}

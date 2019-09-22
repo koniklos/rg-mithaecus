@@ -1,0 +1,17 @@
+// .navbar--active .navbar {
+//   margin-top: 18px;
+// }
+
+.navbar {
+  .navbar__main--active.navbar__main--small {
+    margin-top: 1rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 60px;
+    // display: table-cell;
+    // vertical-align: middle;
+    display: block;
+    float: right;
+  }
+}
