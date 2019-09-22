@@ -13,15 +13,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/koniklos/wptheme01.git"
+    "url": "git+https://github.com/koniklos/rg-mithaecus.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/koniklos/wptheme01/issues"
+    "url": "https://github.com/koniklos/rg-mithaecus/issues"
   },
-  "homepage": "https://github.com/koniklos/wptheme01#readme",
+  "homepage": "https://github.com/koniklos/rg-mithaecus#readme",
   "devDependencies": {
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
@@ -42,7 +42,6 @@
     "gulp-svg-sprite": "^1.5.0",
     "gulp-wp-pot": "^2.3.5",
     "gulp-zip": "^5.0.0",
-    "jeet": "^7.2.0",
     "modernizr": "^3.7.1",
     "susy": "^2.2.14",
     "vinyl-named": "^1.1.0",
@@ -50,10 +49,7 @@
     "yards": "^0.1.4"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.10.1",
-    "lazyload": "^2.0.0-rc.2",
     "sassy-gridlover": "^6.0.5",
-    "scroll-out": "^2.2.7",
     "vanilla-lazyload": "^12.0.0"
   }
 }
