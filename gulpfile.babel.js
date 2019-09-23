@@ -54,8 +54,7 @@ const paths = {
     src: [
       "src/assets/js/bundle.js",
       "src/assets/js/customize-preview.js",
-      "src/assets/js/vendors/lazyload.js",
-      "src/assets/js/vendors/scroll-out.js"
+      "src/assets/js/vendors/lazyload.js"
     ],
     dest: "dist/assets/js",
     watch: "src/assets/js/**/*.js"
@@ -77,12 +76,12 @@ const paths = {
     dest: "dist/assets"
   },
   rename: {
-    src: ["single-_themename_recipe.php"]
+    src: ["single-_themename_recipe.php", "archive-_themename_recipe.php"]
   },
   plugins: {
     src: [
-      "../../plugins/_themename-post-layout-metabox/packaged/*",
-      "../../plugins/_themename-recipes/packaged/*"
+      `../../plugins/${packageDotJSON.name}-post-layout-metabox/packaged/*`,
+      `../../plugins/${packageDotJSON.name}-recipes/packaged/*`
     ],
     dest: ["lib/plugins"]
   },
@@ -277,7 +276,7 @@ export const watch = () => {
 // Zip for distribution
 export const compress = () =>
   gulp
-    .src(paths.package.src)
+    .src(paths.package.src, { base: "../" })
     .pipe(
       gulpif(
         file => file.relative.split(".").pop() !== "zip",

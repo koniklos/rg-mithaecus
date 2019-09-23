@@ -12,6 +12,7 @@ $additional_info = get_post_meta($post->ID, '_themename-_pluginname_additional-i
 // $serves: String
 $serves = get_post_meta($post->ID, '_themename-_pluginname_serves', true);
 ?>
+<?php if ( is_single() ) : ?>
 <article <?php post_class('post post__single'); ?>>
 		<svg width="2000" height="2000" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" class="blob">
 		<g transform="translate(300,300)">
@@ -111,3 +112,21 @@ $serves = get_post_meta($post->ID, '_themename-_pluginname_serves', true);
 	</div>
 	</footer>
 </article>
+<?php	else:	?>
+<article <?php post_class('post post--list mb-2'); ?>>
+	<?php if ( has_post_thumbnail() ) : ?>
+	<div class="post__thumbnail">
+		<?php	the_post_thumbnail( '_themename-thumb-sm' ); ?>
+		<div class="post__thumbnail--fade" style="background-image: url(<?php the_post_thumbnail_url('_themename-thumb-sm'); ?>)"></div>
+	</div>	
+	<?php endif; // thumbnail found... ?>
+
+	<div class="post__inner">
+		<div class="post__excerpt">
+			<?php the_excerpt(); ?>
+		</div>
+		<p class="post__read-more"><?php _themename_readmore_link(); ?></p>
+	</div>
+
+</article>
+<?php endif; ?>
