@@ -2,7 +2,7 @@
 
 function _themename_assets() {
 	wp_enqueue_style( '_themename-stylesheet', get_template_directory_uri() . 
-	'/dist/assets/css/bundle.css', array(), '20190922', 'all' );
+	'/dist/assets/css/bundle.css', array(), date('ydmGis'), 'all' );
 
 	// wp_enqueue_script( '_themename-lazyload', get_template_directory_uri() . 
 	// '/dist/assets/js/lazyload.js', array(), date('ydmGis'), true );

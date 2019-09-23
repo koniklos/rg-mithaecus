@@ -20,7 +20,7 @@ function _themename_array_flatten($array) {
 		}
 		
 	}
-	// var_dump($result);
+
   return $result; 
 }
 
@@ -91,4 +91,19 @@ function _themename_post_thumbnail( $size = null ) {
 		<?php
 	}
 
+}
+
+function _themename_get_layout() {
+	$layout = _themename_meta( get_the_ID(), '__themename_post_layout', 'full' );
+	$sidebar = is_active_sidebar( 'primary-sidebar' );
+
+	if ( $layout === 'sidebar' && !$sidebar ) {
+		$layout = 'full';
+	}
+
+	return $layout;
+}
+
+function _themename_layout() {
+	echo _themename_get_layout();
 }
